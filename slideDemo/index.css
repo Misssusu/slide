@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.section {
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+}
+.window {
+    width: 400px;
+    height: 400px;
+    margin: 20px  auto;
+    overflow: hidden;
+}
+.box {
+    position: relative;
+}
+.box img {
+    position: absolute;
+    transition: all 1500ms;
+}
+.box img.current {
+    z-index: 1;
+    transform: translateX(0);
+}
+.box img.leave {
+    z-index: 1;
+    transform: translateX(-100%);
+}
+.box img.enter {
+    transform: translateX(100%);
+}
